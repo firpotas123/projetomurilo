@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Titillium Web', sans-serif;
-} 
+}
 
 :root {
     --gray-800: #1E293B;
@@ -47,6 +47,8 @@ main {
 .inputs {
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
 }
 
 
@@ -77,6 +79,7 @@ main {
 .login input::hover, 
 .login input:focus {
     outline: 1px solid var(--purple);
+
 }
 
 .login a {
@@ -105,8 +108,6 @@ main {
     cursor: pointer;
 }
 
-
-
 .login > p {
     color: var(--gray-600);
 }
@@ -118,6 +119,10 @@ main {
 
 .login a:hover {
     text-decoration: underline;
+}
+
+.bg-desktop {
+    display: none;
 }
 
 @media(min-width: 1000px) {
@@ -146,6 +151,11 @@ main {
         align-items: center
     }
 
+    .bg-desktop {
+        display: block;
+        width: 100%;
+    }
+
     .bg-desktop img {
         display: block;
         width: 100%;
@@ -159,7 +169,6 @@ main {
 
     .descricao h1 {
         font-size: 2.25rem;
-
     }
 
     .descricao p {
